@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>QrCode</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div id="container">
+  <img src="assets/img/qr_code_ud.jpg">
+  <ion-button [routerLink]="['../lista-restaurante']" routerDirection="forward">Escanear QRCODE</ion-button> <br>
+  <ion-button [routerLink]="['../lista-restaurante']" routerDirection="forward">Delivery</ion-button>
+</div>

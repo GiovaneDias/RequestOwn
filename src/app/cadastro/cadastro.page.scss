@@ -1,0 +1,21 @@
+#container {
+    width: 100%;
+    height: 100%;
+    background: #bdbdbd;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #4b4747;
+    font-weight: bold;
+    padding: 20px;
+}
+
+input {
+    margin: 2px;
+    background: #cfcfcfab;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+ion-button {
+    --ion-color-primary: #797979ab;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}

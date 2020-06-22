@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Criar Conta</ion-title>
+  </ion-toolbar>
+</ion-header>  
+<div id="container">
+  <div>
+    <form action="">
+      <fieldset>
+        <legend>Dados Cadastro:</legend>
+        <input type="text" placeholder="Nome Completo:">      
+        <input type="text" placeholder="E-mail">      
+        <input type="text" placeholder="Telefone:">     
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend>Dados Pagamento:</legend>
+        <input type="text" placeholder="Número Cartão:">      
+        <input type="text" placeholder="CPF:">      
+        <input type="text" placeholder="CVV:">     
+      </fieldset>   
+    </form>
+  </div>
+  <span><ion-button [routerLink]="['../qr-code']" routerDirection="forward">Cadastrar</ion-button></span>
+</div>

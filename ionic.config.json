@@ -1,0 +1,7 @@
+{
+  "name": "RequestOwn",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
