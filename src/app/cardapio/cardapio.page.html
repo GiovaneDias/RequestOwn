@@ -3,12 +3,11 @@
     <ion-title>
       Cardápio
     </ion-title>
-    
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div>
+  
   <div>
     <ion-searchbar
       [(ngModel)]="pesq"  
@@ -17,7 +16,7 @@
     </ion-searchbar>
   </div>
  <div>
-    <ion-card *ngFor="let produto of produtos" id="container">
+    <ion-card *ngFor="let produto of produtos" id="container" routerLink="/pedido">
       <ion-card-header>
         <ion-card-title>{{produto.nome}}</ion-card-title>
         
@@ -26,5 +25,5 @@
       <p style="font-size: large; margin:  20px;">R$ {{produto.preco}}</p>
     </ion-card>
 </div>
-</div>
+
 </ion-content>
