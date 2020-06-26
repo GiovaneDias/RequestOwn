@@ -1,21 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Cardápio
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  
-  <div>
-    <ion-searchbar
+  <ion-toolbar >
+    <ion-navbar>
+    
+      <ion-searchbar
       [(ngModel)]="pesq"  
-      (ionChange)="lerProdutos()"
-      placeholder="">
+      (ionChange)="lerProdutos()">
+      
     </ion-searchbar>
-  </div>
- <div>
+    
+  </ion-navbar>
+  </ion-toolbar>
+
+
+<ion-content [fullscreen]="true"  padding="20px">
+  
+  
+    <div>
+ 
     <ion-card *ngFor="let produto of produtos" id="container" routerLink="/pedido">
       <ion-card-header>
         <ion-card-title>{{produto.nome}}</ion-card-title>
